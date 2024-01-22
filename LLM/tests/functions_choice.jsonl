@@ -1,0 +1,6 @@
+{"query": "Move robot tcp left for 1000mm", "output": ["move_robot_tcp"]},
+{"query": "Move robot sixth joint for 30 degrees left", "output": ["move_joint"]},
+{"query": "Give me robot joint info", "output": ["get_joint_values"]},
+{"query": "Tell me info about robot", "output": ["get_joint_values"]},
+{"query": "Rotate robot base for 45 and move TCP along x axis for 50 milimeters.", "output": ["move_joint","move_robot_tcp"]},
+{"query": "Rotate joint 2 for 30 and joint 7 for 45 degrees", "output": ["move_joint", "move_joint"]}
