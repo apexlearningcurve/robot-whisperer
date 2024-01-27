@@ -9,14 +9,17 @@ readme = "README.md"
 python = "^3.10"
 torch = "2.1.2"
 transformers = "^4.36.2"
-autoawq = "^0.1.8"
-auto-gptq = "^0.6.0"
 optimum = "^1.16.2"
 jsonformer = "^0.12.0"
+openai = "^1.10.0"
+python-dotenv = "^1.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
+
+[tool.poetry.extras]
+cuda = ["auto-gptq"]
 
 [build-system]
 requires = ["poetry-core"]
