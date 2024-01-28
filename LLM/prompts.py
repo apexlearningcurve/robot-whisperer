@@ -116,6 +116,7 @@ USER QUERY: {user_query}
 
 # TODO: Functions that require movement can be expressed as relative or absolute positions, find a way to include this information and act accordingly
 
+# TODO: Change joint angels to be joints in list and angles in list
 if __name__ == "__main__":
     import json
 
