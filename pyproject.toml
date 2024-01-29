@@ -13,6 +13,7 @@ optimum = "^1.16.2"
 openai = "^1.10.0"
 python-dotenv = "^1.0.1"
 jsonformer = {git = "https://github.com/botka1998/jsonformer.git"}
+pydantic = "^2.5.3"
 
 
 [tool.poetry.group.dev.dependencies]
