@@ -22,7 +22,7 @@ class MockServer:
             "06": self.set_tool,
         }
 
-    def run(self):
+    def run(self) -> None:
         self.connection.listen(5)
         print(f"Server listening on port: {self.port}")
         self.connection, addr = self.connection.accept()
@@ -63,7 +63,7 @@ class MockServer:
         action, parameters = instruction[0], instruction[1:]
         return action, parameters
 
-    def get_function(self, action) -> Callable[[any], None] | None:
+    def get_function(self, action:str) -> Callable[[any], None] | None:
         if action not in self.function_dict.keys():
             print(f"[ERROR] Invalid action {action}")
             return None
