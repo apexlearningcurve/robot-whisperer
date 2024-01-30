@@ -63,27 +63,27 @@ class MockServer:
         action, parameters = instruction[0], instruction[1:]
         return action, parameters
 
-    def get_function(self, action:str) -> Callable[[any], None] | None:
+    def get_function(self, action: str) -> Callable[[any], None] | None:
         if action not in self.function_dict.keys():
             print(f"[ERROR] Invalid action {action}")
             return None
 
         return self.function_dict[action]
 
-    def get_joints(self):
+    def get_joints(self) -> None:
         """
         Returns the current angles of the robots joints, in degrees.
         """
         print("Recieved get_joints action")
 
-    def set_joints(self, joints):
+    def set_joints(self, joints: list) -> None:
         """
         Executes a move immediately, from current joint angles,
         to 'joints', in degrees.
         """
         print(f"Recieved set_joints action with parameters: {joints}")
 
-    def set_tool(self, tool=[[0, 0, 0], [1, 0, 0, 0]]):
+    def set_tool(self, tool: list = [[0, 0, 0], [1, 0, 0, 0]]) -> None:
         print(f"Recieved set_tool action with parameters: {tool}")
 
     def move_tcp(self, pose: Pose) -> None:
