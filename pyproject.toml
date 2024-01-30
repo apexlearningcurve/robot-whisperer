@@ -14,6 +14,7 @@ openai = "^1.10.0"
 python-dotenv = "^1.0.1"
 jsonformer = {git = "https://github.com/botka1998/jsonformer.git"}
 tiktoken = "^0.5.2"
+tenacity = "^8.2.3"
 
 
 [tool.poetry.group.dev.dependencies]
