@@ -18,6 +18,7 @@ tiktoken = "^0.5.2"
 tenacity = "^8.2.3"
 bitsandbytes = "^0.42.0"
 accelerate = "^0.26.1"
+jsondiff = "^2.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
