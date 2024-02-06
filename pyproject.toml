@@ -15,6 +15,9 @@ python-dotenv = "^1.0.1"
 jsonformer = {git = "https://github.com/botka1998/jsonformer.git"}
 pydantic = "^2.5.3"
 tiktoken = "^0.5.2"
+tenacity = "^8.2.3"
+bitsandbytes = "^0.42.0"
+accelerate = "^0.26.1"
 
 
 [tool.poetry.group.dev.dependencies]
