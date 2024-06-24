@@ -11884,11 +11884,6 @@
                             "name": "z",
                             "value": 0.6,
                             "unit": "m"
-                        },
-                        {
-                            "name": "unit",
-                            "value": "relative",
-                            "unit": null
                         }
                     ]
                 }
@@ -17267,11 +17262,6 @@
                             "name": "z",
                             "value": 0.5,
                             "unit": "m"
-                        },
-                        {
-                            "name": "unit",
-                            "value": "mm",
-                            "unit": "str"
                         }
                     ]
                 }
