@@ -15,9 +15,14 @@ poetry config virtualenvs.in-project true
 ```
 
 Install the project dependencies
-
+If you want be doing any training you or you are using Mac use this command:
 ```bash
-poetry install
+poetry install --without train
+```
+Otherwise, if you want to finetune on your device and you have CUDA you can use this command:
+```bash
+poetry install --no-root
+
 ```
 
 ## To do list:
