@@ -1,6 +1,6 @@
 import json
 
-from LLM.function_caller import FunctionCaller
+from function_caller import FunctionCaller
 
 user_query_tests = [
     "Move robot tcp left for 1000mm",
