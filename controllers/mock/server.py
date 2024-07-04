@@ -3,7 +3,7 @@ import json
 import socket
 from typing_extensions import Callable
 
-from .models import Pose
+from controllers.mock.models import Pose
 
 
 class MockServer:
@@ -47,7 +47,11 @@ class MockServer:
                     self.connection.send(b"!")
                     continue
 
-                fn(parameters)
+                if len(parameters):
+                    fn(parameters)
+                else:
+                    fn()
+
                 self.connection.send(b"#")
 
     def parse_message(self, message: str) -> tuple[str | None, list]:
