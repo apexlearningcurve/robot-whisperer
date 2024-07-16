@@ -1,0 +1,6 @@
+datasets==2.20.0 
+torch==2.3.0
+torchaudio==2.3.0 
+torchvision==0.18.0 
+wheel==0.43.0
+unsloth @ git+https://github.com/unslothai/unsloth.git@0f2e484f3931d1a558dc3a5967c8da665a2e7252==
