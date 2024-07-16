@@ -5,24 +5,19 @@
 Project is linux based if you want to run on windows you will need [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ## Setup
-
-Install Poetry:
-
+This project is developed with **Python 3.10.13**.
+### Setting up the environment
+1. Create the environment:
 ```bash
-sudo apt install pipx
-pipx install poetry==1.4.0
-poetry config virtualenvs.in-project true
+python -m venv .venv
 ```
-
-Install the project dependencies
-If you want be doing any training you or you are using Mac use this command:
+2. Activate the environment:
 ```bash
-poetry install --without train
+source .venv/bin/activate
 ```
-Otherwise, if you want to finetune on your device and you have CUDA you can use this command:
+3. Install necessary libraries:
 ```bash
-poetry install --no-root
-
+pip install -r requirements.txt
 ```
 
 ## To do list:
